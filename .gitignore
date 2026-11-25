@@ -1,0 +1,42 @@
+# Kiro private configuration and steering files
+.kiro/
+
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# MicroPython compiled files
+*.mpy
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Testing and coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Python packaging
+build/
+dist/
+*.egg-info/
+
+# IDE configuration
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
