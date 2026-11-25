@@ -55,6 +55,50 @@ The microcontroller firmware is responsible for:
 - GPIO
 - PWM
 
+## Software Prerequisites
+
+### Raspberry Pi
+
+- Raspberry Pi OS
+- Python 3
+- PySerial
+
+Install PySerial using:
+
+```bash
+sudo apt update
+sudo apt install python3-serial
+```
+
+Verify the installation:
+
+```bash
+python3 -c "import serial; print(serial.__version__)"
+```
+
+### Raspberry Pi Pico
+
+- MicroPython firmware compatible with the target microcontroller.
+
+The initial development and communication experiments were successfully performed using MicroPython v1.29.0 on the original Raspberry Pi Pico (RP2040).
+
+### Development and Firmware Deployment
+
+The following tools are required for firmware development and deployment but are not required for normal runtime operation:
+
+- pipx
+- mpremote
+
+Install the development tools on the Raspberry Pi:
+
+```bash
+sudo apt install pipx
+pipx install mpremote
+pipx ensurepath
+```
+
+The Raspberry Pi Pico must be connected to the Raspberry Pi using a USB data cable.
+
 ## Repository Structure
 
 ```text
